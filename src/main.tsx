@@ -16,7 +16,7 @@ createRoot(document.getElementById('root')!).render(
   <StrictMode>
     <QueryClientProvider client={client}>
       <Theme>
-          <BrowserRouter>
+          <BrowserRouter basename="/open-trivia">
             <Routes>
               <Route element={<Layout />}>
                 <Route path="/" element={<App />} />
